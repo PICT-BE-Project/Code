@@ -1,0 +1,115 @@
+Breast Cancer encryption time (key size = 1024) ~ 3m30s
+Breast Cancer SSED (without parallel) ~ (6.5m - 10m)
+Breast Cancer SSED (with parallel) ~ 2m
+Breast Cancer KMIN (with parallel) ~ 4m
+
+KMIN BREAST CANCER :
+[72, 0.0, 1]
+[53, 514.3759744802848, 1]
+[107, 3485.231771942943, 1]
+[117, 4171.63465472718, 1]
+[55, 6021.966332351888, 0]
+[305, 6071.334726823802, 1]
+[395, 6169.208314749003, 1]
+[203, 7151.774835105533, 1]
+[120, 7353.162177648679, 0]
+[299, 9201.93046396882, 1]
+[282, 9803.992062627327, 1]
+Final label =  1
+
+KMIN ARRHYTHMIA : 
+[140, 0.0, 1]
+[333, 15001.965579165777, 0]
+[65, 17834.622712577722, 1]
+[267, 19681.093964200205, 0]
+[344, 20312.713983493853, 0]
+[244, 21296.50484889136, 1]
+[141, 21422.02086474715, 1]
+[328, 21664.51272375835, 1]
+[121, 22379.15961171382, 0]
+[154, 22543.706419993243, 0]
+[269, 22979.539899185438, 0]
+
+2 SERVER
+BREAST CANCER SSED WITH ATTRIBUTE PARALLLEL(1024) ~ 832sec
+
+BREAST CANCER SSED WITH ROW PARALLEL(1024) ~ 375 sec
+BREAST CANCER SSED WITH ROW PARALLEL(512) ~ 100sec
+CAR SSED WITH PARALLEL (1024) ~ 290.693022
+
+BREAST CANCER KNN WITH PARALLEL(512) ~ 213sec
+BREAST CANCER KNN WITH NO PARALLEL(512) ~ 360sec
+
+BREAST CANCER KNN WITH PARALLEL(1024) ~ 800s
+
+ARRHYTHMIA KNN WITH PARALLEL(512) ~ 172sec
+ARRHYTHMIA KNN WITH NO PARALLEL(512) ~ 277sec
+
+ARRHYTHMIA KNN WITH PARALLEL(KEY SIZE = 1024) ~883sec
+
+CAR KNN WITH PARALLEL(KEY SIZE = 1024) ~ 3301
+
+BREAST CANCER KNN WITH PARALLEL (KEY = 512)
+times = [5.263193607330322, 9.352410554885864, 13.458998203277588, 17.571500062942505, 21.9779269695282, 42.67431163787842, 62.28234124183655, 93.5011465549469, 128.94074988365173, 160.02162671089172, 233.74342441558838]
+
+
+BREAST CANCER KNN WITHOUT PARALLEL (KEY = 512)
+times = [9.59342074394226, 18.260001182556152, 30.66138768196106, 33.227577924728394, 42.983349084854126, 83.20676136016846, 118.30724263191223, 157.73038935661316, 193.63967394828796, 229.85996222496033, 353.3102741241455]
+
+
+""" BREAST CANCER WITH PARALLEL KEY SIZE = 512 LOGS"
+Received model =  breast_cancer 10
+STARTING
+Finised SSED in 2.363034963607788 second(s)
+Finished KMIN in 2.6073296070098877 second(s)
+INFO:     127.0.0.1:45716 - "POST /execute-KNN?model_name=breast_cancer&num_rec=10 HTTP/1.1" 200 OK
+Received model =  breast_cancer 20
+STARTING
+Finised SSED in 3.6531574726104736 second(s)
+Finished KMIN in 5.37253212928772 second(s)
+INFO:     127.0.0.1:45722 - "POST /execute-KNN?model_name=breast_cancer&num_rec=20 HTTP/1.1" 200 OK
+Received model =  breast_cancer 30
+STARTING
+Finised SSED in 4.956545114517212 second(s)
+Finished KMIN in 8.158218145370483 second(s)
+INFO:     127.0.0.1:43052 - "POST /execute-KNN?model_name=breast_cancer&num_rec=30 HTTP/1.1" 200 OK
+Received model =  breast_cancer 40
+STARTING
+Finised SSED in 6.613601446151733 second(s)
+Finished KMIN in 10.57132863998413 second(s)
+INFO:     127.0.0.1:46366 - "POST /execute-KNN?model_name=breast_cancer&num_rec=40 HTTP/1.1" 200 OK
+Received model =  breast_cancer 50
+STARTING
+Finised SSED in 8.196028709411621 second(s)
+Finished KMIN in 13.390877962112427 second(s)
+INFO:     127.0.0.1:48874 - "POST /execute-KNN?model_name=breast_cancer&num_rec=50 HTTP/1.1" 200 OK
+Received model =  breast_cancer 100
+STARTING
+Finised SSED in 15.616933822631836 second(s)
+Finished KMIN in 26.569193124771118 second(s)
+INFO:     127.0.0.1:35238 - "POST /execute-KNN?model_name=breast_cancer&num_rec=100 HTTP/1.1" 200 OK
+Received model =  breast_cancer 150
+STARTING
+Finised SSED in 22.298197746276855 second(s)
+Finished KMIN in 39.38785672187805 second(s)
+INFO:     127.0.0.1:33738 - "POST /execute-KNN?model_name=breast_cancer&num_rec=150 HTTP/1.1" 200 OK
+Received model =  breast_cancer 200
+STARTING
+Finised SSED in 29.863094329833984 second(s)
+Finished KMIN in 62.952781438827515 second(s)
+INFO:     127.0.0.1:53050 - "POST /execute-KNN?model_name=breast_cancer&num_rec=200 HTTP/1.1" 200 OK
+Received model =  breast_cancer 250
+STARTING
+Finised SSED in 47.845133543014526 second(s)
+Finished KMIN in 80.17800521850586 second(s)
+INFO:     127.0.0.1:55232 - "POST /execute-KNN?model_name=breast_cancer&num_rec=250 HTTP/1.1" 200 OK
+Received model =  breast_cancer 300
+STARTING
+Finised SSED in 57.41719436645508 second(s)
+Finished KMIN in 101.51613569259644 second(s)
+INFO:     127.0.0.1:44940 - "POST /execute-KNN?model_name=breast_cancer&num_rec=300 HTTP/1.1" 200 OK
+Received model =  breast_cancer 455
+STARTING
+Finised SSED in 87.18695878982544 second(s)
+Finished KMIN in 145.20908570289612 second(s)
+INFO:     127.0.0.1:47550 - "POST /execute-KNN?model_name=breast_cancer&num_rec=455 HTTP/1.1" 200 OK
